@@ -15,14 +15,14 @@
   },
   "babel": {
     "presets": [
-      "es2016",
+      "es2015",
       "react"
     ]
   },
   "scripts": {
     "start_server": "babel-node ./index.js",
     "test_server": "mocha --compilers js:babel-core/register --require ./test/test_helper.js  --recursive",
-    "test_server_watch": "npm run test_server -- --watch",
+    "test_server_watch": "npm run test_server -- --watch"
   },
   "devDependencies": {
     "eslint-config-airbnb": "^15.1.0",
